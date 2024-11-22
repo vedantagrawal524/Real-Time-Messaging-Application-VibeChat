@@ -6,7 +6,6 @@ import 'package:whatsapp/common/widgets/error_screen.dart';
 import 'package:whatsapp/common/widgets/loader.dart';
 import 'package:whatsapp/features/auth/controller/auth_controller.dart';
 import 'package:whatsapp/features/auth/screens/landing_screen.dart';
-import 'package:whatsapp/features/call/screens/call_pickup_screen.dart';
 import 'package:whatsapp/firebase_options.dart';
 import 'package:whatsapp/router.dart';
 import 'package:whatsapp/mobile_layout_screen.dart';
@@ -38,23 +37,21 @@ class MyApp extends ConsumerWidget {
         ),
       ),
       onGenerateRoute: (settings) => generateRoute(settings),
-      home: CallPickupScreen(
-        scaffold: ref.watch(userDataAuthProvider).when(
-              data: (user) {
-                if (user == null) {
-                  return const LandingScreen();
-                } else {
-                  return const MobileLayoutScreen();
-                }
-              },
-              error: (e, stackTrace) {
-                return ErrorScreen(
-                  error: e.toString(),
-                );
-              },
-              loading: () => const Loader(),
-            ),
-      ),
+      home: ref.watch(userDataAuthProvider).when(
+            data: (user) {
+              if (user == null) {
+                return const LandingScreen();
+              } else {
+                return const MobileLayoutScreen();
+              }
+            },
+            error: (e, stackTrace) {
+              return ErrorScreen(
+                error: e.toString(),
+              );
+            },
+            loading: () => const Loader(),
+          ),
     );
   }
 }
