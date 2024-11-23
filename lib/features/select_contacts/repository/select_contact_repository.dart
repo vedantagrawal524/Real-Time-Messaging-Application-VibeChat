@@ -59,7 +59,7 @@ class SelectContactRepository {
       if (!isFound) {
         showSnackBar(
             context: context,
-            content: 'This number does not exit on WhatsApp.');
+            content: 'This number does not exit on VibeChat.');
       }
     } catch (e) {
       showSnackBar(context: context, content: e.toString());

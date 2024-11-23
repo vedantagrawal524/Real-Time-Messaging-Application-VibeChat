@@ -23,12 +23,11 @@ class ContactList extends ConsumerWidget {
               builder: (context, snapshot) {
                 if (snapshot.connectionState == ConnectionState.waiting) {
                   return const Loader();
+                } else if (snapshot.hasError) {
+                  return const Center(child: Text(''));
+                } else if (!snapshot.hasData || snapshot.data!.isEmpty) {
+                  return const Center(child: Text(''));
                 }
-                // else if (snapshot.hasError) {
-                //   return const Center(child: Text('Try again Later!'));
-                // } else if (!snapshot.hasData || snapshot.data!.isEmpty) {
-                //   return const Center(child: Text('No contacts found.'));
-                // }
                 return ListView.builder(
                   shrinkWrap: true,
                   itemCount: snapshot.data!.length,

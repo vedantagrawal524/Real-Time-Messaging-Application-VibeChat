@@ -63,7 +63,7 @@ class _MobileLayoutScreenState extends ConsumerState<MobileLayoutScreen>
           backgroundColor: appBarColor,
           elevation: 0,
           title: const Text(
-            "WhatsApp",
+            "VibeChat",
             style: TextStyle(
               color: Colors.grey,
               fontSize: 20,

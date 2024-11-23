@@ -19,7 +19,7 @@ class LandingScreen extends StatelessWidget {
           children: [
             const SizedBox(height: 50),
             const Text(
-              'Welcome to WhatsApp',
+              'Welcome to VibeChat',
               style: TextStyle(
                 fontSize: 32,
                 fontWeight: FontWeight.w600,
