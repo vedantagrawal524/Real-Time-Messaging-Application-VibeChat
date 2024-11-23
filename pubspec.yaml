@@ -45,7 +45,7 @@ dependencies:
   image_picker: ^1.1.2
   flutter_contacts: ^1.1.8
   uuid: ^4.4.0
-  intl: ^0.19.0
+  intl: ^0.20.0
   cached_network_image: ^3.3.1
   cached_video_player: ^2.0.4
   enough_giphy_flutter: ^0.4.1

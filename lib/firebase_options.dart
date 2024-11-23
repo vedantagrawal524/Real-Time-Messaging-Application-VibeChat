@@ -64,7 +64,7 @@ class DefaultFirebaseOptions {
     messagingSenderId: '961090658797',
     projectId: 'whatsapp-8fbbf',
     storageBucket: 'whatsapp-8fbbf.appspot.com',
-    iosBundleId: 'com.example.whatsapp',
+    iosBundleId: 'com.vedant524.vibechat',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
@@ -73,7 +73,7 @@ class DefaultFirebaseOptions {
     messagingSenderId: '961090658797',
     projectId: 'whatsapp-8fbbf',
     storageBucket: 'whatsapp-8fbbf.appspot.com',
-    iosBundleId: 'com.example.whatsapp',
+    iosBundleId: 'com.vedant524.vibechat',
   );
 
   static const FirebaseOptions windows = FirebaseOptions(
