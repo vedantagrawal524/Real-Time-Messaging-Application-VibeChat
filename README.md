@@ -1,16 +1,9 @@
-# whatsapp
+# Real Time Messaging Application
+Tech Stack: Dart, Flutter, Firebase, Agora
+- Engineered a real-time messaging application using Dart and Flutter, ensuring cross-device compatibility.
+- Established backend infrastructure with Firebase and implemented user authentication via Phone OTP verification for secure access.
+- Enabled real-time sharing of images, videos, audio, emojis, and GIFs in one-on-one and group chats.
+- Introduced a Stories feature for sharing updates that disappear after 24 hours, visible only to the user’s contacts.
+- Integrated Agora to facilitate real-time video calling for both one-on-one and group interactions.
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Preview
